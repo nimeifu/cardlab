@@ -19,4 +19,26 @@ public class Deck {
           }
       }
     }
+
+    public boolean isEmpty()
+    {
+        if(Dealt.size() ==0 && unDealt.size()==0)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public ArrayList<Card> size()
+    {
+        for(int i=0;i<unDealt.size();i++)
+        {
+            return unDealt
+        }
+    }
+
+    public void deal()
+    {
+        while()
+    }
 }
