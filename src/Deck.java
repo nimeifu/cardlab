@@ -29,16 +29,39 @@ public class Deck {
         return false;
     }
 
-    public ArrayList<Card> size()
+    public int size()
     {
-        for(int i=0;i<unDealt.size();i++)
-        {
-            return unDealt
-        }
+        return unDealt.size();
     }
 
-    public void deal()
+    public Card deal()
     {
-        while()
+        if(unDealt.size() ==0)
+        {
+            return null;
+        }
+        unDealt.remove(unDealt.get(0));
+        Dealt.add(Dealt.get(0));
+        return unDealt.get(0);
+    }
+
+    public void shuffle()
+    {
+        for(int i=0;i<Dealt.size();i++)
+        {
+            unDealt.add(Dealt.get(i));
+            Dealt.remove(i);
+        }
+
+   int r;
+        for(int k=51;k<=1;k++)
+    {
+        r = (int) (Math.random() * 51);
+       
+
+
+
+
+
     }
 }
